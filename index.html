@@ -59,7 +59,7 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex  lg:flex-row  lg:justify-end ">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
     
       
 <a 
@@ -104,7 +104,7 @@
 
 
     
-      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "x-data="{open: false}">
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
@@ -321,13 +321,16 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
                 
                 
+                
             
             </div>
             
                 <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                
                     <h2  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-blue-900 font-extrabold leading-none tracking-wide text-center">
                         Connect with us on Social
                     </h2>
+                
                 </div>
                 <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
                     
@@ -453,134 +456,137 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
     
 
-        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-blue-900   md:pt-20 xl:pt-20 xl:pb-20">
-            <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
-                <h2 class="my-3 mb-10 text-xl font-medium  text-gray-300  text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9O2T7SGVP097KVXF1P29G457SDJ2GHRIJW958P00.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9SROOHV5EES0W9467V56YE3KS22YLVRIDUHRQSNK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LJWRV4AQBAUGVBN9F0A1875GA6OP4ZO9K123G3VD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LJV3B7Q5KL9XSSPROJPRGFTCMQPG0CCEKE7LRSQ6.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IBWIBZNFMJZD976IDR7T3H9ZP7J6ACIB5OES0CEH.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/E2RPRIUBLNGSU1W9HS0Z52XZPDEB0H1M8U03X0NY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W64N7WGQMWMLSKRJPYHTXE8P53BIRZOHOUZFZ044.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GQXASQIGZVRQR2RVWHVOUK5OFTDJ8UDJTRSETFCE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ADUAE0VNP8DY7EANFPHQ6XELCZ5YOFZUHSLG6X4Z.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9O2T7SGVP097KVXF1P29G457SDJ2GHRIJW958P00.jpeg"  alt = "Photo number 1 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-blue-900   md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+            <h2 class="my-3 mb-10 text-xl font-medium  text-gray-300  text-center">See why our customers love us</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9O2T7SGVP097KVXF1P29G457SDJ2GHRIJW958P00.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9SROOHV5EES0W9467V56YE3KS22YLVRIDUHRQSNK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LJWRV4AQBAUGVBN9F0A1875GA6OP4ZO9K123G3VD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/LJV3B7Q5KL9XSSPROJPRGFTCMQPG0CCEKE7LRSQ6.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IBWIBZNFMJZD976IDR7T3H9ZP7J6ACIB5OES0CEH.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/E2RPRIUBLNGSU1W9HS0Z52XZPDEB0H1M8U03X0NY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W64N7WGQMWMLSKRJPYHTXE8P53BIRZOHOUZFZ044.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GQXASQIGZVRQR2RVWHVOUK5OFTDJ8UDJTRSETFCE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ADUAE0VNP8DY7EANFPHQ6XELCZ5YOFZUHSLG6X4Z.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                    
                         
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9SROOHV5EES0W9467V56YE3KS22YLVRIDUHRQSNK.jpeg"  alt = "Photo number 2 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LJWRV4AQBAUGVBN9F0A1875GA6OP4ZO9K123G3VD.jpeg"  alt = "Photo number 3 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LJV3B7Q5KL9XSSPROJPRGFTCMQPG0CCEKE7LRSQ6.jpeg"  alt = "Photo number 4 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IBWIBZNFMJZD976IDR7T3H9ZP7J6ACIB5OES0CEH.jpeg"  alt = "Photo number 5 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/E2RPRIUBLNGSU1W9HS0Z52XZPDEB0H1M8U03X0NY.jpeg"  alt = "Photo number 6 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W64N7WGQMWMLSKRJPYHTXE8P53BIRZOHOUZFZ044.jpeg"  alt = "Photo number 7 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GQXASQIGZVRQR2RVWHVOUK5OFTDJ8UDJTRSETFCE.jpeg"  alt = "Photo number 8 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ADUAE0VNP8DY7EANFPHQ6XELCZ5YOFZUHSLG6X4Z.jpeg"  alt = "Photo number 9 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                     
-                                        
-            
-                    <div class=" z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" @click.away="open = false" >
-
-
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9O2T7SGVP097KVXF1P29G457SDJ2GHRIJW958P00.jpeg"  alt = "Photo number 1 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9SROOHV5EES0W9467V56YE3KS22YLVRIDUHRQSNK.jpeg"  alt = "Photo number 2 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
-                        <div class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-50 absolute bottom-0 transform translate-x-12 md:translate-x-32">
-                        <button
-                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"                                
-                                @click="open = false">
-                             <span class = "text-black"> <i class="fas fa-lg fa-times"></i> </span>
-                        </button>
-                        </div>
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LJWRV4AQBAUGVBN9F0A1875GA6OP4ZO9K123G3VD.jpeg"  alt = "Photo number 3 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LJV3B7Q5KL9XSSPROJPRGFTCMQPG0CCEKE7LRSQ6.jpeg"  alt = "Photo number 4 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IBWIBZNFMJZD976IDR7T3H9ZP7J6ACIB5OES0CEH.jpeg"  alt = "Photo number 5 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/E2RPRIUBLNGSU1W9HS0Z52XZPDEB0H1M8U03X0NY.jpeg"  alt = "Photo number 6 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W64N7WGQMWMLSKRJPYHTXE8P53BIRZOHOUZFZ044.jpeg"  alt = "Photo number 7 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GQXASQIGZVRQR2RVWHVOUK5OFTDJ8UDJTRSETFCE.jpeg"  alt = "Photo number 8 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ADUAE0VNP8DY7EANFPHQ6XELCZ5YOFZUHSLG6X4Z.jpeg"  alt = "Photo number 9 of Lupita&#x27;s Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                 
+                                    
+        
+                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
 
-                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
 
-                            <template  x-for="(slide, index, collection) in slides" :key="index">
-                                <div class="h-full w-full flex items-center justify-center absolute">
-                                    <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
-                                        x-show="activeSlide === index" 
-                                        x-transition:enter="transition ease-out duration-150"
-                                        x-transition:enter-start="opacity-0 transform scale-90"
-                                        x-transition:enter-end="opacity-100 transform scale-100"
-                                        x-transition:leave="transition ease-in duration-150"
-                                        x-transition:leave-start="opacity-100 transform scale-100"
-                                        x-transition:leave-end="opacity-0 transform scale-90">
+                
+                
+                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
+                    <button
+                    
+                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-gray-300"                                
+                            @click="open = false">
+                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
+                    </button>
+                    </div>
 
-                                        <template x-if="slide[1] === 'photo' ">
-                                            <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
-                                        </template>
-                                        
-                                        <template x-if="slide[1] != 'photo'  ">
-                                            <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
-                                            </video>
-                                        </template> 
-                                        
-                                    </div>
-                                    <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
-                                        x-show="activeSlide === index">
-                                        <span class="w-12 text-right" x-text="index + 1"></span>
-                                        <span class="w-4 text-center">/</span>
-                                        <span class="w-12 text-left" x-text="slides.length"></span>
-                                    </div>
+                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                        <template  x-for="(slide, index, collection) in slides" :key="index">
+                            <div class="h-full w-full flex items-center justify-center absolute">
+                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                    x-show="activeSlide === index" 
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 transform scale-90"
+                                    x-transition:enter-end="opacity-100 transform scale-100"
+                                    x-transition:leave="transition ease-in duration-150"
+                                    x-transition:leave-start="opacity-100 transform scale-100"
+                                    x-transition:leave-end="opacity-0 transform scale-90">
+
+                                    <template x-if="slide[1] === 'photo' ">
+                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                    </template>
+                                    
+                                    <template x-if="slide[1] != 'photo'  ">
+                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        </video>
+                                    </template> 
+                                    
                                 </div>
+                                <div  class="fixed text-gray-300 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                    x-show="activeSlide === index">
+                                    <span class="w-12 text-right" x-text="index + 1"></span>
+                                    <span class="w-4 text-center">/</span>
+                                    <span class="w-12 text-left" x-text="slides.length"></span>
+                                </div>
+                            </div>
                         </template>
 
-                        <div class="fixed z-50 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
-                            <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
-                            <button 
-                                    type="button"
-                                    class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white  " 
-                                   
-                                    @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
-                                    <span class = "text-black"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
+                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                        <button 
+                                type="button"
+                                
+                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-gray-300" 
                                
-                            </button>
-                            </div>
-                            <div class="flex items-center justify-start w-12 md:ml-16">
-                            <button 
-                                    type="button"
-                                    class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white   "
-                                   
-                                    @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
-                               <span class = "text-black"> <i class="fas fa-lg fa-chevron-right"></i> </span>
-                            </button>
-                            </div>
+                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                           
+                        </button>
                         </div>
-
+                        <div class="flex items-center justify-start w-12 md:ml-16">
+                        <button 
+                                type="button"
+                                
+                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-gray-300   "
+                               
+                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                        </button>
+                        </div>
                     </div>
+
                 </div>
-            </div>     
-    
-                
-        </div>
-    </div>
-    
+            </div>
+            </div>
+        </div>     
+
+            
+</div>
+
         
     
     
@@ -607,7 +613,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-white  ">Shannon K.</h3>
+                            <h3 class="font-bold  text-white  ">Ann Reeves Jone</h3>
                             <h3 class=" text-white ">Noblesville, Indiana  , Residential Cleaning  </h3>
                             <div class="flex flex-row items-start ">
                                 
@@ -624,7 +630,65 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Lupita's Cleaning is fantastic! Responsive and professional. Highly recommend. "</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Lupita has cleaned my house for about 4 years now. I cannot recommend her services enough! She does an exceptional job and is very detailed! I highly recommend her services!!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Allison Chelminiak</h3>
+                            <h3 class=" text-white ">Noblesville, Indiana  , Residential Cleaning  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"I highly recommend Lupita! She's kind and very thorough. I have hired a few other companies in the past, and honestly none of them compare to Lupita and her team. We had some major water stains in the shower and in toilets that we've never been able to get clean and Lupita was able to remove those stains. They are very detailed in their cleaning and I couldn't be happier!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Lisa Celifarco Brandenburg</h3>
+                            <h3 class=" text-white ">Noblesville, Indiana  , Residential Cleaning  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Lupita and her team have been cleaning my house for a few months.  They are always friendly, professional and willing to change up their order of cleaning based on the meetings I have that day.  Best of all, their prices are so reasonable!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -635,8 +699,20 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                 <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
                 
+                <a target= "_blank" href="https://www.facebook.com/Lupitas-Cleaning-Services-112144273470124/reviews/?ref=page_internal"  class="w-full">
+                    <button   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-300  hover:bg-white hover:text-blue-900 ">
+                            <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
+                    </button>
+                </a>
+                
              
                 
+                <a target= "_blank" href="https://www.facebook.com/Lupitas-Cleaning-Services-112144273470124/reviews/?ref=page_internal" class="w-full">
+                    <button  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-300  hover:bg-white hover:text-blue-900 ">
+                            <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
+                    </button>
+                </a>
+               
             </div>
 
                          
